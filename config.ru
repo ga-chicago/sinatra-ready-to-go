@@ -7,6 +7,9 @@ ActiveRecord::Base.establish_connection(
     :database => 'db.sqlite3'
   )
 
-require './app/controllers/application_controller'
+require './app/models/user'
 
-map('/') { run ApplicationController }
+require './app/controllers/application_controller'
+require './app/controllers/users_controller'
+
+map('/users') { run UsersController }
