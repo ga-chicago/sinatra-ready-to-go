@@ -9,3 +9,4 @@ ActiveRecord::Base.establish_connection(
 
 require './app/controllers/application_controller'
 
+map('/') { run ApplicationController }
