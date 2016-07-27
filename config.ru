@@ -11,5 +11,7 @@ require './app/models/user'
 
 require './app/controllers/application_controller'
 require './app/controllers/users_controller'
+require './app/controllers/home_controller'
 
 map('/users') { run UsersController }
+map('/')      { run HomeController  }
