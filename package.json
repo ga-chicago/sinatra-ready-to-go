@@ -1,0 +1,34 @@
+{
+  "name": "sinatra-ready-to-go",
+  "version": "1.0.0",
+  "description": "This project has everything you need to begin adding controllers for a RESTful API.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ga-chicago/sinatra-ready-to-go.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ga-chicago/sinatra-ready-to-go/issues"
+  },
+  "homepage": "https://github.com/ga-chicago/sinatra-ready-to-go#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "superagent": "^2.1.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

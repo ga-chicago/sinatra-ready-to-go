@@ -60,7 +60,7 @@ class UsersController < ApplicationController
     user = User.create username: params['username'], email: params['email'], password: password
 
     if user
-      { status: 'ok', message: 'New user created' }.to_json
+      user.to_json
     else
       { status: 'error', message: 'Could not save user' }.to_json
     end
