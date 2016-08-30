@@ -1,11 +1,11 @@
 require 'bundler'
+require 'yaml'
 
 Bundler.require :default, ENV['RACK_ENV'].to_sym
 
-ActiveRecord::Base.establish_connection(
-    :adapter => 'sqlite3',
-    :database => 'db.sqlite3'
-  )
+database_cxn = YAML.load_file('./config/database.yml')
+
+ActiveRecord::Base.establish_connection database_cxn[ENV['RACK_ENV']] # database_cxn['development']
 
 require './app/models/user'
 

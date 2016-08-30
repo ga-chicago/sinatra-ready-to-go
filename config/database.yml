@@ -1,3 +1,9 @@
 development:
   adapter: sqlite3
   database: ../db.sqlite3
+production:
+  adapter: mysql2
+  database: heroku_fb80cbf140fa249
+  username: bac9ae95b47f76
+  password: 91751e9e
+  host: mysql://us-cdbr-iron-east-04.cleardb.net/heroku_fb80cbf140fa249?reconnect=true
